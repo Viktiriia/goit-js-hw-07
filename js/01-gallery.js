@@ -37,6 +37,7 @@ function onImgClick(e) {
 }
 function onEscKeyPress(e) {
   if (e.code !== 'Escape') return;
+  if(e.target.nodeName !== "IMG") return
   instance.close();
 }
 console.log(galleryItems);
